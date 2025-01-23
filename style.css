@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: url(./image/1877565.png);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+}
+
+.main-screen {
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    width: 4vw;
+}
+
+.files {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 85vh;
+    width: 20vw;
+}
+
+.file h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.file {
+    width: 7vw;
+    height: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.file:hover {
+    background-color: rgba(128, 128, 128, 0.297);
+}
+
+.music-player {
+    width: 30vw;
+    height: 80vh;
+    background-color: rgba(128, 128, 128, 0.19);
+    backdrop-filter: blur(10px);
+    border-radius: 1vw;
+    padding: 2vw;
+    color: white;
+    font-family: cursive;
+    text-align: center;
+}
+
+.music-player .fist-player h1 {
+    font-size: 1vw;
+}
+
+.music-player .fist-player p {
+    font-size: 0.2vw;
+}
+
+.touch-panel {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.touch-panel button {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.second-player {
+    height: 20vw;
+    margin-top: 3vw;
+    border-top: 0.1vw solid white;
+    border-bottom: 0.1vw solid white;
+    background-color: black;
+    padding: 0.3vw;
+    overflow: auto;
+}
+
+.songs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    border-top: 0.1vw solid rgba(255, 255, 255, 0.135);
+    border-bottom: 0.1vw solid rgba(255, 255, 255, 0.135);
+    padding: 0.2vw 0;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0.3vw;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0.2vw;
+    background-color: white;
+    border-radius: 2vw;
+}
+
+.songs:hover {
+    background-color: rgba(255, 255, 255, 0.189);
+}
+
+.songs .title {
+    font-size: 1.4vw;
+}
+
+.songs .artist {
+    font-size: 0.7vw;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.song-title {
+    font-size: 2vw;
+}
+
+.song-artist {
+    font-size: 1vw;
+}
+
+.about h3 {
+    color: white;
+    font-size: 3vw;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    backdrop-filter: blur(20px);
+    height: 20vw;
+    background-color: rgba(93, 72, 39, 0.185);
+    border-radius: 2vw;
+    cursor: pointer;
+    gap: 2vw;
+}
+
+.about i {
+    color: white;
+    font-size: 10vw;
+}
+
+
+@media screen and (max-width: 850px) {
+    .main-screen {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .files {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 35vw;
+        gap: 2vw;
+    }
+
+    .music-player {
+        width: 90vw;
+        height: 70vw;
+    }
+
+    .image {
+        width: 10vw;
+    }
+
+    .file {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .file h2 {
+        font-size: 2vw;
+    }
+
+    .songs {
+        width: 100%;
+        height: 10vw;
+    }
+
+    .second-player {
+        height: 40vw;
+    }
+
+    .songs .title {
+        font-size: 3vw;
+    }
+
+    .songs .artist {
+        font-size: 1.6vw;
+    }
+
+    .touch-panel button {
+        width: 10vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+    .song-title {
+        font-size: 5vw;
+    }
+
+    .song-artist {
+        font-size: 3vw;
+    }
+
+    .about {
+        height: 30vw;
+        width: 30vw;
+        gap: 2vw;
+    }
+}
