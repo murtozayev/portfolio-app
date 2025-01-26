@@ -161,21 +161,12 @@ const files = document.querySelector(".files");
 
 for (let i = 0; i < data.length; i++) {
   files.innerHTML += `
-          <div class="file" ondblclick="window.location.assign('${data[i].link}')" >
+          <div class="file" onclick="window.location.assign('${data[i].link}')" >
               <img class="image" src="${data[i].icon}" alt="Logo">
               <h2>${data[i].filename}</h2>
           </div>
       `;
 }
-
-const fileElements = document.querySelectorAll(".file");
-
-fileElements.forEach((file) => {
-  file.addEventListener("click", () => {
-    fileElements.forEach((f) => (f.style.background = ""));
-    file.style.background = "rgba(128, 128, 128, 0.652)";
-  });
-});
 
 const secondPlayer = document.querySelector(".second-player");
 
