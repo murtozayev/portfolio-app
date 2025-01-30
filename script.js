@@ -3,6 +3,11 @@ const date = document.querySelector(".date");
 
 const data = [
   {
+    filename: "Nibble app",
+    link: "https://nibbleapp.vercel.app/",
+    icon: "./image/logo-food.png",
+  },
+  {
     filename: "Check chest scary game",
     link: "https://check-chest-scary-game.vercel.app",
     icon: "./image/chest.png",
@@ -31,11 +36,6 @@ const data = [
     filename: "React Music Player",
     link: "https://react-music-player-seven-inky.vercel.app/",
     icon: "./image/music.png",
-  },
-  {
-    filename: "Eyes People",
-    link: "https://kozlar.vercel.app/",
-    icon: "./image/eyes.png",
   },
   {
     filename: "WI school landing page",
