@@ -23,8 +23,8 @@ const data = [
     icon: "./image/github.png",
   },
   {
-    filename: "Dashboard Landing Page",
-    link: "https://admin-dash-navy.vercel.app/",
+    filename: "Companies",
+    link: "https://companyapp-delta.vercel.app/",
     icon: "./image/dash.png",
   },
   {
